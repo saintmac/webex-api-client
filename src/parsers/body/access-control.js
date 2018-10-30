@@ -27,7 +27,6 @@ const REGSTATUS = ENUMS.registrationStatus;
  * @return {String}          accessControl XML
  */
 module.exports = elements => {
-	validate(elements, ['registration'], 'accessControl');
 
 	let elCopy = Object.assign({}, elements);
 
