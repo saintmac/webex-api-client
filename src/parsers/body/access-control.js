@@ -31,11 +31,6 @@ module.exports = elements => {
 
 	let elCopy = Object.assign({}, elements);
 
-	if (!elements.listStatus) {
-		// set to default public
-		elCopy = Object.assign({}, {listStatus: LISTSTATUS[0]});
-	}
-
 	if (elements.sessionPassword) {
 		if (elements.sessionPassword.length > 16) {
 			throw new Error('Expected elements.sessionPassword to be shorter than 16 characters');
